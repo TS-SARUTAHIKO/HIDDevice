@@ -1,0 +1,39 @@
+package com.xxxsarutahikoxxx.kotlin.hiddevice.runner
+
+import com.xxxsarutahikoxxx.kotlin.SocketRunner.BluetoothRunner
+import com.xxxsarutahikoxxx.kotlin.SocketRunner.ClientWebRunner
+import com.xxxsarutahikoxxx.kotlin.SocketRunner.HostWebRunner
+import com.xxxsarutahikoxxx.kotlin.hiddevice.core.HIDData
+import com.xxxsarutahikoxxx.kotlin.hiddevice.core.HIDExporter
+import java.io.Serializable
+import java.lang.RuntimeException
+import java.util.*
+
+
+open class HostRunner(port : Int) : HostWebRunner(port, true){
+    override fun onAccept(obj: Serializable) {
+        when( obj ){
+            is HIDData -> { obj.invoke() }
+        }
+    }
+}
+
+open class ClientRunner(address : String = "localhost", port : Int) : ClientWebRunner(address, port, true), HIDExporter {
+    override fun export(data: HIDData){
+        writeObject(data)
+    }
+}
+
+
+open class BTHostRunner(uuid : UUID) : BluetoothRunner(uuid, true, true){
+    @Deprecated("")
+    override fun connect() {
+        throw RuntimeException("")
+    }
+
+    override fun onAccept(obj: Serializable) {
+        when( obj ){
+            is HIDData -> { obj.invoke() }
+        }
+    }
+}
