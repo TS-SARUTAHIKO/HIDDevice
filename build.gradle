@@ -18,7 +18,7 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 
     compile group: 'net.java.dev.jna', name: 'jna', version: '4.5.0'
-    implementation 'com.xxxsarutahikoxxx.kotlin:KotlinLibrary:0.0.21'
+    implementation 'com.xxxsarutahikoxxx.kotlin:KotlinLibrary:1.0.0'
 }
 
 compileKotlin {
@@ -31,7 +31,7 @@ compileTestKotlin {
 
 
 
-def versionName = "1.0.0"
+def versionName = "1.0.1"
 def repo = new File(rootDir, "repository")
 
 apply plugin: 'maven'

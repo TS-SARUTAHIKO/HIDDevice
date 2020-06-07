@@ -1,6 +1,6 @@
 package com.xxxsarutahikoxxx.kotlin.hiddevice.runner
 
-import com.xxxsarutahikoxxx.kotlin.KotlinLibraryLog.outStream
+import com.xxxsarutahikoxxx.kotlin.Utilitys.outstream
 import java.awt.*
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent
@@ -29,7 +29,7 @@ class TrayFrame(title : String, pushTray : Boolean) : JFrame() {
     val text = TextArea()
 
     init {
-        outStream = { _, value -> text.append("$value"+"\n") ; println("$value") }
+        outstream = { value -> text.append("$value"+"\n") ; println("$value") }
 
         layout = BorderLayout()
         add(text, BorderLayout.CENTER)
