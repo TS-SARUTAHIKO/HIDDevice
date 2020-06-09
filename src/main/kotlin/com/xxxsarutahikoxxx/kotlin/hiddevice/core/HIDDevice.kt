@@ -258,14 +258,14 @@ open class HIDDevice(val hostMode : Boolean, var port : HIDExporter?, open val k
     val Ex2Click get() = keyMap.VK_MouseEx2.toMouseClick
 
     val LPress get() = keyMap.VK_MouseLeft.toMousePress
-    val RPress get() = keyMap.VK_MouseMiddle.toMousePress
-    val MPress get() = keyMap.VK_MouseRight.toMousePress
+    val MPress get() = keyMap.VK_MouseMiddle.toMousePress
+    val RPress get() = keyMap.VK_MouseRight.toMousePress
     val Ex1Press get() = keyMap.VK_MouseEx1.toMousePress
     val Ex2Press get() = keyMap.VK_MouseEx2.toMousePress
 
     val LRelease get() = keyMap.VK_MouseLeft.toMouseRelease
-    val RRelease get() = keyMap.VK_MouseMiddle.toMouseRelease
-    val MRelease get() = keyMap.VK_MouseRight.toMouseRelease
+    val MRelease get() = keyMap.VK_MouseMiddle.toMouseRelease
+    val RRelease get() = keyMap.VK_MouseRight.toMouseRelease
     val Ex1Release get() = keyMap.VK_MouseEx1.toMouseRelease
     val Ex2Release get() = keyMap.VK_MouseEx2.toMouseRelease
 

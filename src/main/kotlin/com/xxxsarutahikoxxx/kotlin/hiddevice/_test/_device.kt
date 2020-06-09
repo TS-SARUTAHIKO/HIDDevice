@@ -1,7 +1,13 @@
 package com.xxxsarutahikoxxx.kotlin.hiddevice._test
 
+import com.xxxsarutahikoxxx.kotlin.hiddevice.core.HIDField
 import com.xxxsarutahikoxxx.kotlin.hiddevice.core.Paste
 import com.xxxsarutahikoxxx.kotlin.hiddevice.utilitys.JISHost
+import com.xxxsarutahikoxxx.kotlin.hiddevice.utilitys.out
+import com.xxxsarutahikoxxx.kotlin.hiddeviceNative.HID
+import com.xxxsarutahikoxxx.kotlin.hiddeviceNative.TryWithHWND
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.launch
 
 fun main(args: Array<String>) {
 
@@ -46,12 +52,17 @@ fun main(args: Array<String>) {
 //        + Right + Paste
 //
 //        + "lowercase" + Shift{ + "uppercase" + UnShift { + "lower" } }
-
-        mouseDrag( 100 to 200 )
+//
+//        mouseDrag( 100 to 200 )
     }
 
-    JISHost {
-        + "a"
-    }
+
+
+    val user = TryWithHWND.User32.INSTANCE
+    val window = user.GetForegroundWindow()
+    out = window
+
+    Thread.sleep(3000)
+
+    out = user.BringWindowToTop(window)
 }
-

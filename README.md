@@ -19,7 +19,7 @@ repositories {
 dependencies {
     // Omitted
     
-    implementation 'com.xxxsarutahikoxxx.kotlin:HIDDevice:1.0.0'
+    implementation 'com.xxxsarutahikoxxx.kotlin:HIDDevice:1.0.1'
 }
 ```
 

@@ -3,6 +3,7 @@ package com.xxxsarutahikoxxx.kotlin.hiddevice.runner
 import com.xxxsarutahikoxxx.kotlin.SocketRunner.BluetoothRunner
 import com.xxxsarutahikoxxx.kotlin.SocketRunner.ClientWebRunner
 import com.xxxsarutahikoxxx.kotlin.SocketRunner.HostWebRunner
+import com.xxxsarutahikoxxx.kotlin.Utilitys.outstream
 import com.xxxsarutahikoxxx.kotlin.hiddevice.core.HIDData
 import com.xxxsarutahikoxxx.kotlin.hiddevice.core.HIDExporter
 import com.xxxsarutahikoxxx.kotlin.hiddevice.utilitys.out
@@ -35,9 +36,7 @@ open class BTHostRunner(uuid : UUID) : BluetoothRunner(uuid, true, true){
     override fun onAccept(obj: Serializable) {
         when( obj ){
             is HIDData -> { obj.invoke() }
-            is String -> {
-                out = "LOG : $obj"
-            }
+            is String -> { outstream("$obj") }
         }
     }
 }
