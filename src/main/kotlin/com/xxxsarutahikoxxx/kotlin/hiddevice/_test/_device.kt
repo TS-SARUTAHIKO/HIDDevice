@@ -12,6 +12,7 @@ import kotlinx.coroutines.launch
 fun main(args: Array<String>) {
 
     JISHost {
+        Mouse
 //        mPoint = 100 to 300
 //
 //        Mouse + (100 to 200)

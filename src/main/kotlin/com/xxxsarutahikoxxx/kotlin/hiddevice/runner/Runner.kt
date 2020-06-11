@@ -27,7 +27,7 @@ open class ClientRunner(address : String = "localhost", port : Int) : ClientWebR
 }
 
 
-open class BTHostRunner(uuid : UUID) : BluetoothRunner(uuid, true, true){
+open class BTHostRunner(uuid : UUID) : BluetoothRunner(uuid, true, true, true){
     @Deprecated("")
     override fun connect() {
         throw RuntimeException("")
