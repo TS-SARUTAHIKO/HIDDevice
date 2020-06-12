@@ -8,6 +8,8 @@ import com.xxxsarutahikoxxx.kotlin.hiddevice.core.HIDData
 import com.xxxsarutahikoxxx.kotlin.hiddevice.core.HIDDeviceJIS
 import com.xxxsarutahikoxxx.kotlin.hiddevice.core.HIDExporter
 import com.xxxsarutahikoxxx.kotlin.hiddevice.utilitys.JISHost
+import com.xxxsarutahikoxxx.kotlin.hiddevice.utilitys.out
+import java.awt.Robot
 import java.util.*
 
 fun main(args: Array<String>) {
@@ -15,4 +17,5 @@ fun main(args: Array<String>) {
         val runner = BTHostRunner(UUID.fromString(BluetoothRunner.BLUETOOTH_RUNNER_DEFAULT_UUID))
         runner.open()
     }
+
 }

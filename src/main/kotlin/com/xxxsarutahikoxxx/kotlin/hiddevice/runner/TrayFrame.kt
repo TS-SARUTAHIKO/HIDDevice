@@ -33,7 +33,14 @@ class TrayFrame(title : String, pushTray : Boolean) : JFrame() {
 
         layout = BorderLayout()
         add(text, BorderLayout.CENTER)
-        add(Button("Close").apply { addActionListener{ exitProcess(0) } }, BorderLayout.SOUTH)
+        add(Button("Close").apply { addActionListener{
+
+
+            BTHostRunner.list
+
+
+            exitProcess(0)
+        } }, BorderLayout.SOUTH)
 
         setBounds(200, 200, 600, 400)
 

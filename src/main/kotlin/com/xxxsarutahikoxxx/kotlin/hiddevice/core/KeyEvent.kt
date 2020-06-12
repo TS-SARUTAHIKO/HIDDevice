@@ -21,12 +21,17 @@ interface HIDData : Serializable {
  * リスト内のHIDデータを順に実行する
  * */
 open class HIDList (
-    val list: List<HIDData>
+    val list: List<HIDData>,
+    /** 区切り待機時間。 10msec 程度の待機時間がないと処理の取りこぼしが発生する。 */
+    val delimiter : Long = 10
 ) : HIDData {
     override val time: Long = System.currentTimeMillis()
 
     override fun invoke() {
-        list.forEach { it.invoke() }
+        list.forEach {
+            it.invoke()
+            Thread.sleep(delimiter)
+        }
     }
 
     companion object {
