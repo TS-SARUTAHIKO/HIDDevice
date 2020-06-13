@@ -3,10 +3,10 @@ package com.xxxsarutahikoxxx.kotlin.hiddeviceNative
 internal class HID : HID_IO(){
     companion object {
         // Window
-        fun activeWindowTitle(): String? {
+        fun activeWindowTitle(): String {
             return io.INSTANCE.ActiveWindowTitle().toString()
         }
-        fun activeWindowProcessName(): String? {
+        fun activeWindowProcessName(): String {
             return io.INSTANCE.ActiveWindowProcessName()
         }
         fun minimizeActiveWindow() {

@@ -237,6 +237,7 @@ open class KeyClick(
 }
 
 
+// Sleep
 /** スレッドを待機します */
 class SleepHID(val millis: Long) : HIDData {
     override fun toString(): String = "Sleep $millis"
@@ -255,3 +256,69 @@ class SleepHID(val millis: Long) : HIDData {
 fun HIDData.withPreSleep(millis: Long) = HIDList( listOf( SleepHID(millis), this) )
 /** イベントの後に待機時間を挟む形でラップします */
 fun HIDData.withPostSleep(millis: Long) = HIDList( listOf( this, SleepHID(millis)) )
+
+
+// 条件実行
+interface ConditionHID : HIDData
+
+/**
+ * アクティブなウィンドウのタイトルが正規表現を満たしていた場合に実行する
+ *
+ * @param mode : 0 -> 完全一致, 1 -> 部分一致
+ * */
+class WindowTitle(val regex : List<String>, val mode : Int, val data : HIDData) : ConditionHID {
+    constructor(data : HIDData, mode : Int, vararg regex : String) : this(regex.toList(), mode, data)
+
+    override fun toString(): String = "WindowName $regex"
+    override val time: Long = System.currentTimeMillis()
+
+    override fun invoke() {
+        val title = HID.activeWindowTitle()
+
+        val func : String.(Regex)->(Boolean) = when(mode){
+            0 -> String::matches
+            else -> String::contains
+        }
+
+        if( regex.any { title.func(Regex(it)) } ){
+            data.invoke()
+        }
+    }
+
+    companion object {
+        @JvmStatic private val serialVersionUID: Long = 1L
+    }
+}
+/**
+ * アクティブなプロセスが正規表現を満たしていた場合に実行する
+ *
+ * @param mode : 0 -> 完全一致, 1 -> 部分一致
+ * */
+class WindowProcess(val regex : List<String>, val mode : Int, val data : HIDData) : ConditionHID {
+    constructor(data : HIDData, mode : Int, vararg regex : String) : this( regex.toList(), mode, data)
+
+    override fun toString(): String = "ProcessName $regex"
+    override val time: Long = System.currentTimeMillis()
+
+    override fun invoke() {
+        val title = HID.activeWindowProcessName()
+
+        val func : String.(Regex)->(Boolean) = when(mode){
+            0 -> String::matches
+            else -> String::contains
+        }
+
+        if( regex.any { title.func(Regex(it)) } ){
+            data.invoke()
+        }
+    }
+
+    companion object {
+        @JvmStatic private val serialVersionUID: Long = 1L
+    }
+}
+
+fun HIDData.ifTitleMatches(vararg regex : String) = WindowTitle(regex.toList(), 0, this)
+fun HIDData.ifTitleContains(vararg regex : String) = WindowTitle(regex.toList(), 1, this)
+fun HIDData.ifProcessMatches(vararg regex : String) = WindowProcess(regex.toList(), 0, this)
+fun HIDData.ifProcessContains(vararg regex : String) = WindowProcess(regex.toList(), 1, this)

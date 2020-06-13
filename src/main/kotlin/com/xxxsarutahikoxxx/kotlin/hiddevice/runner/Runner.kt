@@ -36,15 +36,8 @@ open class BTHostRunner(uuid : UUID) : BluetoothRunner(uuid, true, true, true){
 
     override fun onAccept(obj: Serializable) {
         when( obj ){
-            is HIDData -> { obj.invoke() ; (obj as? MousePoint)?.run {
-                list.add( System.currentTimeMillis() to (this.x to this.y) )
-            }  }
+            is HIDData -> { obj.invoke() }
             is String -> { outstream("$obj") }
         }
-    }
-
-
-    companion object {
-        val list : MutableList<Pair<Long, Pair<Int, Int>>> = mutableListOf()
     }
 }

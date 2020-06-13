@@ -2,6 +2,8 @@ package com.xxxsarutahikoxxx.kotlin.hiddevice._test
 
 import com.xxxsarutahikoxxx.kotlin.hiddevice.core.HIDField
 import com.xxxsarutahikoxxx.kotlin.hiddevice.core.Paste
+import com.xxxsarutahikoxxx.kotlin.hiddevice.core.WindowProcess
+import com.xxxsarutahikoxxx.kotlin.hiddevice.core.WindowTitle
 import com.xxxsarutahikoxxx.kotlin.hiddevice.utilitys.JISHost
 import com.xxxsarutahikoxxx.kotlin.hiddevice.utilitys.out
 import com.xxxsarutahikoxxx.kotlin.hiddeviceNative.HID
@@ -12,7 +14,6 @@ import kotlinx.coroutines.launch
 fun main(args: Array<String>) {
 
     JISHost {
-        Mouse
 //        mPoint = 100 to 300
 //
 //        Mouse + (100 to 200)
@@ -55,15 +56,22 @@ fun main(args: Array<String>) {
 //        + "lowercase" + Shift{ + "uppercase" + UnShift { + "lower" } }
 //
 //        mouseDrag( 100 to 200 )
+
+        out = isShiftPressed
+        isShiftPressed = true
+        out = isShiftPressed
+        isShiftPressed = false
+        out = isShiftPressed
     }
 
 
 
-    val user = TryWithHWND.User32.INSTANCE
-    val window = user.GetForegroundWindow()
-    out = window
 
-    Thread.sleep(3000)
-
-    out = user.BringWindowToTop(window)
+//    val user = TryWithHWND.User32.INSTANCE
+//    val window = user.GetForegroundWindow()
+//    out = window
+//
+//    Thread.sleep(3000)
+//
+//    out = user.BringWindowToTop(window)
 }

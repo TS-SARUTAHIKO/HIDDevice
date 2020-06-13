@@ -1,5 +1,6 @@
 package com.xxxsarutahikoxxx.kotlin.hiddevice.core
 
+import com.xxxsarutahikoxxx.kotlin.hiddeviceNative.HID
 import java.lang.RuntimeException
 
 
@@ -18,7 +19,7 @@ open class HIDDevice(val hostMode : Boolean, var port : HIDExporter?, open val k
         if( hostMode ){ data.invoke() }else{ port?.export(data) }
     }
 
-    // + hiddeviceNative
+    // + HIDDeviceNative
     operator fun HIDData.unaryPlus() : HIDDevice {
         invoke(this)
 
@@ -40,6 +41,81 @@ open class HIDDevice(val hostMode : Boolean, var port : HIDExporter?, open val k
     operator fun HIDDevice.plus(data : String) : HIDDevice = data.unaryPlus()
 
     operator fun HIDDevice.plus(hid : HIDDevice) : HIDDevice = this
+
+
+    // Mask
+    /**
+     * shift キーの状態を返します。
+     *
+     * HostMode ならばシステムに問い合わせます、値はシステムの状態に一致します
+     *
+     * ClientMode ならば設定された値を返します、ホストの値と異なる場合があります、適切にホストと状態同期を行ってください
+     *
+     * 値を設定すると必要に応じて [keyPress] / [keyRelease] が発行されます
+     * */
+    var isShiftPressed : Boolean = false
+        get(){
+            if( hostMode ) field = HID.isShiftPressed
+            return field
+        }
+        set(value) {
+            if( field != value ){
+                field = value
+
+                when{
+                    field -> keyPress(keyMap.VK_Shift.first)
+                    ! field -> keyRelease(keyMap.VK_Shift.first)
+                }
+            }
+        }
+    /**
+     * control キーの状態を返します。
+     *
+     * HostMode ならばシステムに問い合わせます、値はシステムの状態に一致します
+     *
+     * ClientMode ならば設定された値を返します、ホストの値と異なる場合があります、適切にホストと状態同期を行ってください
+     *
+     * 値を設定すると必要に応じて [keyPress] / [keyRelease] が発行されます
+     * */
+    var isControlPressed : Boolean = false
+        get(){
+            if( hostMode ) field = HID.isControlPressed
+            return field
+        }
+        set(value) {
+            if( field != value ){
+                field = value
+
+                when{
+                    field -> keyPress(keyMap.VK_Control.first)
+                    ! field -> keyRelease(keyMap.VK_Control.first)
+                }
+            }
+        }
+    /**
+     * alt キーの状態を返します。
+     *
+     * HostMode ならばシステムに問い合わせます、値はシステムの状態に一致します
+     *
+     * ClientMode ならば設定された値を返します、ホストの値と異なる場合があります、適切にホストと状態同期を行ってください
+     *
+     * 値を設定すると必要に応じて [keyPress] / [keyRelease] が発行されます
+     * */
+    var isAltPressed : Boolean = false
+        get(){
+            if( hostMode ) field = HID.isAltPressed
+            return field
+        }
+        set(value) {
+            if( field != value ){
+                field = value
+
+                when{
+                    field -> keyPress(keyMap.VK_Alt.first)
+                    ! field -> keyRelease(keyMap.VK_Alt.first)
+                }
+            }
+        }
 
 
     //
