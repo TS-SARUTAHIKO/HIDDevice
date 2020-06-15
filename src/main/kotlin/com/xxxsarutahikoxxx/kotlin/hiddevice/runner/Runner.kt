@@ -2,6 +2,7 @@ package com.xxxsarutahikoxxx.kotlin.hiddevice.runner
 
 import com.xxxsarutahikoxxx.kotlin.SocketRunner.BluetoothRunner
 import com.xxxsarutahikoxxx.kotlin.SocketRunner.ClientWebRunner
+import com.xxxsarutahikoxxx.kotlin.SocketRunner.HostBluetoothRunner
 import com.xxxsarutahikoxxx.kotlin.SocketRunner.HostWebRunner
 import com.xxxsarutahikoxxx.kotlin.Utilitys.outstream
 import com.xxxsarutahikoxxx.kotlin.hiddevice.core.HIDData
@@ -28,11 +29,9 @@ open class ClientRunner(address : String = "localhost", port : Int) : ClientWebR
 }
 
 
-open class BTHostRunner(uuid : UUID) : BluetoothRunner(uuid, true, true, true){
-    @Deprecated("")
-    override fun connect() {
-        throw RuntimeException("")
-    }
+open class BTHostRunner : HostBluetoothRunner {
+    constructor() : super()
+    constructor(uuid : String) : super(uuid)
 
     var time = System.currentTimeMillis() to System.currentTimeMillis()
     override fun onAccept(obj: Serializable) {

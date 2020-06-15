@@ -15,7 +15,7 @@ import kotlin.concurrent.thread
 
 fun main(args: Array<String>) {
     TrayFrame("BT-Host", false).apply {
-        val runner = BTHostRunner(UUID.fromString(BluetoothRunner.BLUETOOTH_RUNNER_DEFAULT_UUID))
+        val runner = BTHostRunner()
         runner.open()
 
         // これがないと読み込みのタイミング制御がうまくいかない
