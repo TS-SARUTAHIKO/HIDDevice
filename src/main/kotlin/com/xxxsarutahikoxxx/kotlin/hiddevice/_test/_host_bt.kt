@@ -19,12 +19,12 @@ fun main(args: Array<String>) {
         runner.open()
 
         // これがないと読み込みのタイミング制御がうまくいかない
-        thread {
-            while(true){
-                Thread.sleep(33)
-                runner.writeObject("${System.currentTimeMillis()}")
-            }
-        }
+//        thread {
+//            while(true){
+//                Thread.sleep(33)
+//                runner.writeObject(System.currentTimeMillis())
+//            }
+//        }
     }
 
 }

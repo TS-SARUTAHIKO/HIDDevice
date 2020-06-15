@@ -34,10 +34,17 @@ open class BTHostRunner(uuid : UUID) : BluetoothRunner(uuid, true, true, true){
         throw RuntimeException("")
     }
 
+    var time = System.currentTimeMillis() to System.currentTimeMillis()
     override fun onAccept(obj: Serializable) {
         when( obj ){
             is HIDData -> { obj.invoke() }
             is String -> { outstream("$obj") }
+            is Long -> {
+                val (send, accept) = obj to System.currentTimeMillis()
+
+                out = "Send : ${send - time.first}, Accept : ${accept - time.second}"
+                time = send to accept
+            }
         }
     }
 }
