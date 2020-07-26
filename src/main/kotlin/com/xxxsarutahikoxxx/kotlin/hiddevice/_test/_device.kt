@@ -1,15 +1,7 @@
 package com.xxxsarutahikoxxx.kotlin.hiddevice._test
 
-import com.xxxsarutahikoxxx.kotlin.hiddevice.core.HIDField
-import com.xxxsarutahikoxxx.kotlin.hiddevice.core.Paste
-import com.xxxsarutahikoxxx.kotlin.hiddevice.core.WindowProcess
-import com.xxxsarutahikoxxx.kotlin.hiddevice.core.WindowTitle
+import com.xxxsarutahikoxxx.kotlin.Utilitys.out
 import com.xxxsarutahikoxxx.kotlin.hiddevice.utilitys.JISHost
-import com.xxxsarutahikoxxx.kotlin.hiddevice.utilitys.out
-import com.xxxsarutahikoxxx.kotlin.hiddeviceNative.HID
-import com.xxxsarutahikoxxx.kotlin.hiddeviceNative.TryWithHWND
-import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.launch
 
 fun main(args: Array<String>) {
 

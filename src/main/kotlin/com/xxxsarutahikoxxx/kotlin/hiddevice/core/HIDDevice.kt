@@ -166,6 +166,12 @@ open class HIDDevice(val hostMode : Boolean, var port : HIDExporter?, open val k
      * alt の press / release は現状の alt の状態にかかわらず必ず行われます
      *  */
     fun Alt(action : HIDDevice.()->(Unit) = {} ) = onClick( keyMap.VK_Alt.first, action)
+    /**
+     * win を押した状態で処理を行った後に win を離します
+     *
+     * win の press / release は現状の win の状態にかかわらず必ず行われます
+     *  */
+    fun Win(action : HIDDevice.()->(Unit) = {} ) = onClick( keyMap.VK_LWindows.first, action)
 
     fun onUnClick(keyCode : Int, action : HIDDevice.()->(Unit) = {} ) : HIDDevice {
         keyRelease(keyCode)
@@ -192,6 +198,12 @@ open class HIDDevice(val hostMode : Boolean, var port : HIDExporter?, open val k
      * alt の release / press は現状の alt の状態にかかわらず必ず行われます
      *  */
     fun UnAlt(action : HIDDevice.()->(Unit) = {} ) = onUnClick( keyMap.VK_Alt.first, action)
+    /**
+     * win を離した状態で処理を行った後に win を押します
+     *
+     * win の release / press は現状の win の状態にかかわらず必ず行われます
+     *  */
+    fun UnWin(action : HIDDevice.()->(Unit) = {} ) = onUnClick( keyMap.VK_LWindows.first, action)
 
 
 

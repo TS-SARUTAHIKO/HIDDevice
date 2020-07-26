@@ -9,7 +9,7 @@ import com.xxxsarutahikoxxx.kotlin.hiddevice.core.HIDExporter
 fun main(args: Array<String>) {
     val frame = TrayFrame("WebHost", false)
 
-    HIDDeviceJIS(true, HostRunner(port = 50001).run {
+    HIDDeviceJIS(true, HostRunner().run {
         object : HIDExporter {
             override fun export(data: HIDData) {}
         }

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9faff507-2211-45ef-851f-cd8aac5bb187" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/HIDDevice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/_test/_client_web.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/_test/_client_web.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/_test/_device.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/_test/_device.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/_test/_host_bt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/_test/_host_bt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/_test/_host_web.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/_test/_host_web.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/core/HIDDevice.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/core/HIDDevice.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/core/HIDExporter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/core/HIDExporter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/core/HIDField.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/core/HIDField.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/core/KeyEvent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/core/HIDEvent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/runner/Runner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/runner/Runner.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/utilitys/utilitys.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/xxxsarutahikoxxx/kotlin/hiddevice/utilitys/utilitys.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fu</find>
+      <find>ji</find>
+      <find>qu</find>
+      <find>xyi</find>
+      <find>yi</find>
+      <find>wu</find>
+      <find>la</find>
+      <find>var</find>
+      <find>KeySet</find>
+      <find>HIDData = HIDField</find>
+      <find>to 0.shiftMask() to 0</find>
+      <find>KeyboardHID</find>
+      <find>KeyboardHid</find>
+      <find>HIDData</find>
+      <find>com.xxxsarutahikoxxx.kotlin.HIDDevice.</find>
+      <find>VK_</find>
+      <find>RPress</find>
+      <find>Press</find>
+      <find>MouseWheel</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>val</replace>
+      <replace>HIDData get() = HIDField</replace>
+      <replace>HIDData get() = KeyPress(HIDField.</replace>
+      <replace>).shifted</replace>
+      <replace>MouseHID</replace>
+      <replace>KeyboardHID</replace>
+      <replace>KeyboardHid</replace>
+      <replace>HIDData</replace>
+      <replace>KeyData</replace>
+      <replace>keyMap.VK_</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1e5CA1TkGIeydZ4PglUlW3Bekjf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/kotlin/runner" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.xxxsarutahikoxxx.hiddevice.core" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\My Library\My Workstation\Kotlin Workspace\HIDDevice\src\main\kotlin\runner" />
+      <recent name="D:\My Library\My Workstation\Kotlin Workspace\HIDDevice\src\main\resources\win32-x86-64" />
+      <recent name="D:\My Library\My Workstation\Kotlin Workspace\HIDDevice\src\main\resources\IME" />
+      <recent name="D:\My Library\My Workstation\Kotlin Workspace\HIDDeviceA\src\main\java\com\xxxsarutahikoxxx\kotlin\Runner" />
+      <recent name="D:\My Library\My Workstation\Kotlin Workspace\HIDDeviceA\src\main\java\com\xxxsarutahikoxxx\kotlin\HIDDevice" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xxxsarutahikoxxx.hiddevice.core" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\My Library\My Workstation\Kotlin Workspace\HIDDevice\src\main\kotlin\com\xxxsarutahikoxxx\kotlin\hiddevice\core" />
+      <recent name="D:\My Library\My Workstation\Kotlin Workspace\HIDDevice\src\main\kotlin\com\xxxsarutahikoxxx\kotlin\hiddevice\_test" />
+      <recent name="D:\My Library\My Workstation\Kotlin Workspace\HIDDevice\src\main\kotlin\com\xxxsarutahikoxxx\hiddevice\_test" />
+      <recent name="D:\My Library\My Workstation\Kotlin Workspace\HIDDevice\src\main\kotlin\com\xxxsarutahikoxxx\hiddevice\core" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin._host_btKt">
+    <configuration name="TryWithHWND" type="Application" factoryName="アプリケーション" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xxxsarutahikoxxx.kotlin.hiddeviceNative.TryWithHWND" />
+      <module name="HIDDevice.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xxxsarutahikoxxx.kotlin.hiddeviceNative.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_host_btKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="HIDDevice.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.xxxsarutahikoxxx.kotlin.hiddevice._test._host_btKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Kotlin._host_btKt" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin._host_btKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9faff507-2211-45ef-851f-cd8aac5bb187" name="Default Changelist" comment="" />
+      <created>1574198258470</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574198258470</updated>
+    </task>
+    <task id="LOCAL-00001" summary="First 0.1.1">
+      <created>1574199347938</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574199347938</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First 0.1.1">
+      <created>1574200229375</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574200229375</updated>
+    </task>
+    <task id="LOCAL-00003" summary="vwe 1.0.0">
+      <created>1591488319605</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591488319605</updated>
+    </task>
+    <task id="LOCAL-00004" summary="vwe 1.0.0">
+      <created>1591488389452</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591488389452</updated>
+    </task>
+    <task id="LOCAL-00005" summary="vwe 1.0.1">
+      <created>1591508584591</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591508584591</updated>
+    </task>
+    <task id="LOCAL-00006" summary="vwe 1.0.3 &#10;バグ修正：RPress MPress が逆転していたケアレスミス">
+      <created>1591726899378</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591726899379</updated>
+    </task>
+    <task id="LOCAL-00007" summary="vwe 1.0.4&#10;SocketRunner の調整">
+      <created>1591850344416</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1591850344416</updated>
+    </task>
+    <task id="LOCAL-00008" summary="vwe 1.0.5&#10;HIDList に区切り用の待機時間の追加">
+      <created>1591942645389</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591942645389</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ver 1.0.6&#10;HIDDevice.isShiftPressed の追加">
+      <created>1592074329415</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1592074329415</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ver 1.0.7">
+      <created>1592186700644</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1592186700644</updated>
+    </task>
+    <task id="LOCAL-00011" summary="ver 1.0.8">
+      <created>1592188094215</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1592188094215</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ver 1.0.9">
+      <created>1592189228144</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1592189228144</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ver 1.0.10">
+      <created>1592201505069</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1592201505069</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="FIrst 1.0.1" />
+    <MESSAGE value="FIrst 0.1.1" />
+    <MESSAGE value="First 0.1.1" />
+    <MESSAGE value="vwe 1.0.0" />
+    <MESSAGE value="vwe 1.0.1" />
+    <MESSAGE value="vwe 1.0.3 &#10;バグ修正：RPress MPress が逆転していたケアレスミス" />
+    <MESSAGE value="vwe 1.0.4&#10;SocketRunner の調整" />
+    <MESSAGE value="vwe 1.0.5&#10;HIDList に区切り用の待機時間の追加" />
+    <MESSAGE value="ver 1.0.6&#10;HIDDevice.isShiftPressed の追加" />
+    <MESSAGE value="ver 1.0.7" />
+    <MESSAGE value="ver 1.0.8" />
+    <MESSAGE value="ver 1.0.9" />
+    <MESSAGE value="ver 1.0.10" />
+    <option name="LAST_COMMIT_MESSAGE" value="ver 1.0.10" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="728" y="159" key="#_host_btKt" timestamp="1595708770222">
+      <screen x="110" y="0" width="1810" height="1080" />
+    </state>
+    <state x="728" y="159" key="#_host_btKt/110.0.1810.1080/-1920.0.1920.1040@110.0.1810.1080" timestamp="1595708770222" />
+    <state x="469" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595708822741">
+      <screen x="110" y="0" width="1810" height="1080" />
+    </state>
+    <state x="469" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/110.0.1810.1080/-1920.0.1920.1040@110.0.1810.1080" timestamp="1595708822741" />
+    <state width="1767" height="262" key="GridCell.Tab.0.bottom" timestamp="1595736457061">
+      <screen x="110" y="0" width="1810" height="1080" />
+    </state>
+    <state width="1767" height="262" key="GridCell.Tab.0.bottom/110.0.1810.1080/-1920.0.1920.1040@110.0.1810.1080" timestamp="1595736457061" />
+    <state width="1767" height="262" key="GridCell.Tab.0.center" timestamp="1595736457061">
+      <screen x="110" y="0" width="1810" height="1080" />
+    </state>
+    <state width="1767" height="262" key="GridCell.Tab.0.center/110.0.1810.1080/-1920.0.1920.1040@110.0.1810.1080" timestamp="1595736457061" />
+    <state width="1767" height="262" key="GridCell.Tab.0.left" timestamp="1595736457061">
+      <screen x="110" y="0" width="1810" height="1080" />
+    </state>
+    <state width="1767" height="262" key="GridCell.Tab.0.left/110.0.1810.1080/-1920.0.1920.1040@110.0.1810.1080" timestamp="1595736457061" />
+    <state width="1767" height="262" key="GridCell.Tab.0.right" timestamp="1595736457061">
+      <screen x="110" y="0" width="1810" height="1080" />
+    </state>
+    <state width="1767" height="262" key="GridCell.Tab.0.right/110.0.1810.1080/-1920.0.1920.1040@110.0.1810.1080" timestamp="1595736457061" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

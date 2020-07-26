@@ -9,7 +9,7 @@ import com.xxxsarutahikoxxx.kotlin.hiddevice.core.HIDExporter
 fun main(args: Array<String>) {
     val frame = TrayFrame("WebClient", false)
 
-    HIDDeviceJIS(false, ClientRunner(port = 50001)).apply {
+    HIDDeviceJIS(false, ClientRunner()).apply {
         (port as? ClientRunner)?.connect()
     }
 }

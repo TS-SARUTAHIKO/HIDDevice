@@ -1,5 +1,6 @@
 package com.xxxsarutahikoxxx.kotlin.hiddevice.core
 
+
 /**
  * C++ のキー・マウスの定数フィールドののハードコーディング値
  *
@@ -153,6 +154,17 @@ open class HIDField {
         val VK_Media_Prev_Track : Int = 177
         val VK_Media_Next_Track : Int = 176
         val VK_Media_Stop : Int = 178
+
+
+        private val VK_Map : Map<Int, String> = {
+            Companion::class.java.declaredMethods
+                .filter { it.name.startsWith("getVK_") && it.returnType == Int::class.java }
+                .associate {
+                    it.invoke(HIDField.Companion) as Int to it.name.substring(3, it.name.length)
+                }
+        }.invoke()
+
+        fun VK_Name(value : Int) : String? = VK_Map[value]
     }
 }
 
