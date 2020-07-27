@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.xxxsarutahikoxxx.kotlin" module="HIDDevice" revision="1.0-SNAPSHOT" status="integration" publication="20200727054251"/>
+  <info organisation="com.xxxsarutahikoxxx.kotlin" module="HIDDevice" revision="1.0-SNAPSHOT" status="integration" publication="20200727160008"/>
   <configurations>
     <conf name="annotationProcessor" visibility="private"/>
     <conf name="api" visibility="private" extends="compile"/>
@@ -49,7 +49,7 @@
     <dependency org="org.jetbrains.kotlin" name="kotlin-stdlib" rev="1.3.60" conf="implementation-&gt;default"/>
     <dependency org="net.java.dev.jna" name="jna" rev="4.5.0" conf="implementation-&gt;default"/>
     <dependency org="net.java.dev.jna" name="jna-platform" rev="4.5.0" conf="implementation-&gt;default"/>
-    <dependency org="com.xxxsarutahikoxxx.kotlin" name="KotlinLibrary" rev="1.1.2" conf="implementation-&gt;default"/>
+    <dependency org="com.xxxsarutahikoxxx.kotlin" name="KotlinLibrary" rev="1.1.3" conf="implementation-&gt;default"/>
     <dependency org="org.jetbrains.kotlinx" name="kotlinx-coroutines-core" rev="1.3.7" conf="implementation-&gt;default"/>
     <dependency org="org.jetbrains.kotlin" name="kotlin-compiler-embeddable" rev="1.3.60" conf="kotlinCompilerClasspath-&gt;default"/>
     <dependency org="org.jetbrains.kotlin" name="kotlin-scripting-compiler-embeddable" rev="1.3.60" conf="kotlinCompilerPluginClasspath-&gt;default"/>

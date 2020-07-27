@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9faff507-2211-45ef-851f-cd8aac5bb187" name="Default Changelist" comment="ver 1.0.11">
-      <change beforePath="$PROJECT_DIR$/repository/com/xxxsarutahikoxxx/kotlin/HIDDevice/maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/repository/com/xxxsarutahikoxxx/kotlin/HIDDevice/maven-metadata.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/com/xxxsarutahikoxxx/kotlin/HIDDevice/maven-metadata.xml.md5" beforeDir="false" afterPath="$PROJECT_DIR$/repository/com/xxxsarutahikoxxx/kotlin/HIDDevice/maven-metadata.xml.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/com/xxxsarutahikoxxx/kotlin/HIDDevice/maven-metadata.xml.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/repository/com/xxxsarutahikoxxx/kotlin/HIDDevice/maven-metadata.xml.sha1" afterDir="false" />
+    <list default="true" id="9faff507-2211-45ef-851f-cd8aac5bb187" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xxxsarutahikoxxx/kotlin/hiddeviceNative/HID_IO$io.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xxxsarutahikoxxx/kotlin/hiddeviceNative/HID_IO$io.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xxxsarutahikoxxx/kotlin/hiddeviceNative/HID_IO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xxxsarutahikoxxx/kotlin/hiddeviceNative/HID_IO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xxxsarutahikoxxx/kotlin/hiddeviceNative/TryWithHWND$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xxxsarutahikoxxx/kotlin/hiddeviceNative/TryWithHWND$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xxxsarutahikoxxx/kotlin/hiddeviceNative/TryWithHWND$User32.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xxxsarutahikoxxx/kotlin/hiddeviceNative/TryWithHWND$User32.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/xxxsarutahikoxxx/kotlin/hiddeviceNative/TryWithHWND.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/xxxsarutahikoxxx/kotlin/hiddeviceNative/TryWithHWND.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,41 +37,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>fu</find>
-      <find>ji</find>
-      <find>qu</find>
-      <find>xyi</find>
-      <find>yi</find>
-      <find>wu</find>
-      <find>la</find>
-      <find>var</find>
-      <find>KeySet</find>
-      <find>HIDData = HIDField</find>
-      <find>to 0.shiftMask() to 0</find>
-      <find>KeyboardHID</find>
-      <find>KeyboardHid</find>
-      <find>HIDData</find>
-      <find>com.xxxsarutahikoxxx.kotlin.HIDDevice.</find>
-      <find>VK_</find>
-      <find>RPress</find>
-      <find>Press</find>
-      <find>MouseWheel</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>val</replace>
-      <replace>HIDData get() = HIDField</replace>
-      <replace>HIDData get() = KeyPress(HIDField.</replace>
-      <replace>).shifted</replace>
-      <replace>MouseHID</replace>
-      <replace>KeyboardHID</replace>
-      <replace>KeyboardHid</replace>
-      <replace>HIDData</replace>
-      <replace>KeyData</replace>
-      <replace>keyMap.VK_</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -246,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595796206688</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="ver 1.0.11">
+      <created>1595796393889</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1595796393889</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -287,22 +269,30 @@
       <screen x="110" y="0" width="1810" height="1080" />
     </state>
     <state x="469" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/110.0.1810.1080/-1920.0.1920.1040@110.0.1810.1080" timestamp="1595708822741" />
-    <state width="1767" height="262" key="GridCell.Tab.0.bottom" timestamp="1595736457061">
+    <state x="609" y="205" key="CommitChangelistDialog2" timestamp="1595796392777">
       <screen x="110" y="0" width="1810" height="1080" />
     </state>
-    <state width="1767" height="262" key="GridCell.Tab.0.bottom/110.0.1810.1080/-1920.0.1920.1040@110.0.1810.1080" timestamp="1595736457061" />
-    <state width="1767" height="262" key="GridCell.Tab.0.center" timestamp="1595736457061">
+    <state x="609" y="205" key="CommitChangelistDialog2/110.0.1810.1080/-1920.0.1920.1040@110.0.1810.1080" timestamp="1595796392777" />
+    <state width="1767" height="262" key="GridCell.Tab.0.bottom" timestamp="1595828959060">
       <screen x="110" y="0" width="1810" height="1080" />
     </state>
-    <state width="1767" height="262" key="GridCell.Tab.0.center/110.0.1810.1080/-1920.0.1920.1040@110.0.1810.1080" timestamp="1595736457061" />
-    <state width="1767" height="262" key="GridCell.Tab.0.left" timestamp="1595736457061">
+    <state width="1767" height="262" key="GridCell.Tab.0.bottom/110.0.1810.1080/-1920.0.1920.1040@110.0.1810.1080" timestamp="1595828959060" />
+    <state width="1767" height="262" key="GridCell.Tab.0.center" timestamp="1595828959060">
       <screen x="110" y="0" width="1810" height="1080" />
     </state>
-    <state width="1767" height="262" key="GridCell.Tab.0.left/110.0.1810.1080/-1920.0.1920.1040@110.0.1810.1080" timestamp="1595736457061" />
-    <state width="1767" height="262" key="GridCell.Tab.0.right" timestamp="1595736457061">
+    <state width="1767" height="262" key="GridCell.Tab.0.center/110.0.1810.1080/-1920.0.1920.1040@110.0.1810.1080" timestamp="1595828959060" />
+    <state width="1767" height="262" key="GridCell.Tab.0.left" timestamp="1595828959060">
       <screen x="110" y="0" width="1810" height="1080" />
     </state>
-    <state width="1767" height="262" key="GridCell.Tab.0.right/110.0.1810.1080/-1920.0.1920.1040@110.0.1810.1080" timestamp="1595736457061" />
+    <state width="1767" height="262" key="GridCell.Tab.0.left/110.0.1810.1080/-1920.0.1920.1040@110.0.1810.1080" timestamp="1595828959060" />
+    <state width="1767" height="262" key="GridCell.Tab.0.right" timestamp="1595828959060">
+      <screen x="110" y="0" width="1810" height="1080" />
+    </state>
+    <state width="1767" height="262" key="GridCell.Tab.0.right/110.0.1810.1080/-1920.0.1920.1040@110.0.1810.1080" timestamp="1595828959060" />
+    <state x="607" y="273" key="Vcs.Push.Dialog.v2" timestamp="1595796402363">
+      <screen x="110" y="0" width="1810" height="1080" />
+    </state>
+    <state x="607" y="273" key="Vcs.Push.Dialog.v2/110.0.1810.1080/-1920.0.1920.1040@110.0.1810.1080" timestamp="1595796402363" />
   </component>
   <component name="masterDetails">
     <states>
