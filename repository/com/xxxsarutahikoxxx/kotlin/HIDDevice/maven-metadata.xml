@@ -3,7 +3,7 @@
   <groupId>com.xxxsarutahikoxxx.kotlin</groupId>
   <artifactId>HIDDevice</artifactId>
   <versioning>
-    <release>1.0.12</release>
+    <release>1.0.13</release>
     <versions>
       <version>1.0.0</version>
       <version>1.0.1</version>
@@ -18,7 +18,8 @@
       <version>1.0.10</version>
       <version>1.0.11</version>
       <version>1.0.12</version>
+      <version>1.0.13</version>
     </versions>
-    <lastUpdated>20200727070010</lastUpdated>
+    <lastUpdated>20200727072748</lastUpdated>
   </versioning>
 </metadata>
