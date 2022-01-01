@@ -1,4 +1,4 @@
-package org.xxxsarutahikoxxx.kotlin.hiddeviceNative
+package org.xxxsarutahikoxxx.kotlin.HIDDeviceNative
 
 internal class HID : HID_IO(){
     companion object {

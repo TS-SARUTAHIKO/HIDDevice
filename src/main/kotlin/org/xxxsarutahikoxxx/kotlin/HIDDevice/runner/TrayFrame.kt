@@ -1,6 +1,6 @@
-package org.xxxsarutahikoxxx.kotlin.hiddevice.runner
+package org.xxxsarutahikoxxx.kotlin.HIDDevice.runner
 
-import org.xxxsarutahikoxxx.kotlin.Utilitys.outstream
+import org.xxxsarutahikoxxx.kotlin.KotlinLibrary.Utilitys.outstream
 import java.awt.*
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent

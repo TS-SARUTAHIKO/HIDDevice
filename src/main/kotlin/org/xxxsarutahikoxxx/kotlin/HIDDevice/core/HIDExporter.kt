@@ -1,4 +1,4 @@
-package org.xxxsarutahikoxxx.kotlin.hiddevice.core
+package org.xxxsarutahikoxxx.kotlin.HIDDevice.core
 
 /**
  *

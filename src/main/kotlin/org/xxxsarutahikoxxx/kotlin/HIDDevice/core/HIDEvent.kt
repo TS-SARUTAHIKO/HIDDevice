@@ -1,6 +1,6 @@
-package org.xxxsarutahikoxxx.kotlin.hiddevice.core
+package org.xxxsarutahikoxxx.kotlin.HIDDevice.core
 
-import org.xxxsarutahikoxxx.kotlin.hiddeviceNative.HID
+import org.xxxsarutahikoxxx.kotlin.HIDDeviceNative.HID
 import java.io.Serializable
 
 

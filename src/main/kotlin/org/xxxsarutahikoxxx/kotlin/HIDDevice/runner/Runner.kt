@@ -1,8 +1,8 @@
-package org.xxxsarutahikoxxx.kotlin.hiddevice.runner
+package org.xxxsarutahikoxxx.kotlin.HIDDevice.runner
 
-import org.xxxsarutahikoxxx.kotlin.IORunner.*
-import org.xxxsarutahikoxxx.kotlin.Utilitys.out
-import org.xxxsarutahikoxxx.kotlin.hiddevice.core.*
+import org.xxxsarutahikoxxx.kotlin.KotlinLibrary.IORunner.*
+import org.xxxsarutahikoxxx.kotlin.KotlinLibrary.Utilitys.out
+import org.xxxsarutahikoxxx.kotlin.HIDDevice.core.*
 import java.io.Serializable
 import java.lang.RuntimeException
 
@@ -13,7 +13,15 @@ open class HostWebRunner(port : Int) : HostTCPRunner(port), HIDExporter {
         }
     }
 
+
+
+    var time = System.currentTimeMillis()
+
     override fun onAccept(obj: Serializable) {
+        val time2 = System.currentTimeMillis()
+        if( time2-time > 50 )out = (time2-time)
+        time = time2
+
         when( obj ){
             is HIDData -> { obj.invoke() }
         }
