@@ -1,0 +1,59 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.6.10'
+    id 'java'
+}
+
+group 'org.xxxsarutahikoxxx.kotlin'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    mavenCentral()
+
+    maven { url 'https://github.com/TS-SARUTAHIKO/KotlinLibrary/raw/master/repository/' }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    implementation 'org.xxxsarutahikoxxx.kotlin:KotlinLibrary:2.0.6'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
+
+    implementation group: 'io.ultreia', name: 'bluecove', version: '2.1.1'
+
+    implementation 'net.java.dev.jna:jna:5.10.0'
+    implementation 'net.java.dev.jna:jna-platform:5.10.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+
+
+apply plugin: 'maven-publish'
+
+def gID = "org.xxxsarutahikoxxx.kotlin"
+def aID= "HIDDevice"
+def ver = "2.0.1"
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = gID
+            artifactId = aID
+            version = ver
+
+            from components.java
+        }
+    }
+}
+task copyRepo(type : Copy, dependsOn: publishToMavenLocal){
+    from "C:\\Users\\tshom\\.m2\\repository\\${gID.replace(".", "\\")}\\${aID}"
+    into new File(rootDir, "repository\\${gID.replace(".", "\\")}\\${aID}")
+}
+task makeRepo(type : Delete, dependsOn: copyRepo) {
+    delete "C:\\Users\\tshom\\.m2\\repository\\${gID.replace(".", "\\")}\\${aID}"
+}

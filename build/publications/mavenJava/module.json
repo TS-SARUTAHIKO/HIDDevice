@@ -1,0 +1,108 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.xxxsarutahikoxxx.kotlin",
+    "module": "HIDDevice",
+    "version": "2.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "HIDDevice-2.0.1.jar",
+          "url": "HIDDevice-2.0.1.jar",
+          "size": 1056428,
+          "sha512": "879c9bbed3ade857b05559b49afa83d894665b37a9da8ccb392ebcb7fca8ae64dff903a527ef50e3bf0ed6f8b0f12ea31dedba748ef6843d045fb4d90ec6a84d",
+          "sha256": "d844570d9883230be64a8dbacb3c8b47488843acb117f05219dd456c2a7c648a",
+          "sha1": "7e082606dde048c9c47ce7c502db9993d1baf5b1",
+          "md5": "25fe1b5062619344ef41be498296ae02"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.6.10"
+          }
+        },
+        {
+          "group": "org.xxxsarutahikoxxx.kotlin",
+          "module": "KotlinLibrary",
+          "version": {
+            "requires": "2.0.6"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.6.0"
+          }
+        },
+        {
+          "group": "io.ultreia",
+          "module": "bluecove",
+          "version": {
+            "requires": "2.1.1"
+          }
+        },
+        {
+          "group": "net.java.dev.jna",
+          "module": "jna",
+          "version": {
+            "requires": "5.10.0"
+          }
+        },
+        {
+          "group": "net.java.dev.jna",
+          "module": "jna-platform",
+          "version": {
+            "requires": "5.10.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "HIDDevice-2.0.1.jar",
+          "url": "HIDDevice-2.0.1.jar",
+          "size": 1056428,
+          "sha512": "879c9bbed3ade857b05559b49afa83d894665b37a9da8ccb392ebcb7fca8ae64dff903a527ef50e3bf0ed6f8b0f12ea31dedba748ef6843d045fb4d90ec6a84d",
+          "sha256": "d844570d9883230be64a8dbacb3c8b47488843acb117f05219dd456c2a7c648a",
+          "sha1": "7e082606dde048c9c47ce7c502db9993d1baf5b1",
+          "md5": "25fe1b5062619344ef41be498296ae02"
+        }
+      ]
+    }
+  ]
+}
