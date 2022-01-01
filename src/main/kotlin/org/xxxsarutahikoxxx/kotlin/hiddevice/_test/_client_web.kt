@@ -9,6 +9,7 @@ import org.xxxsarutahikoxxx.kotlin.hiddevice.core.MouseShift
 import org.xxxsarutahikoxxx.kotlin.hiddevice.runner.ClientWebRunner
 import org.xxxsarutahikoxxx.kotlin.hiddevice.runner.HostWebRunner
 import org.xxxsarutahikoxxx.kotlin.hiddevice.runner.TrayFrame
+import java.io.InputStream
 import java.net.InetAddress
 import kotlin.concurrent.thread
 import kotlin.random.Random

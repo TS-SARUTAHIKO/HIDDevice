@@ -18,13 +18,13 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 
-    implementation 'org.xxxsarutahikoxxx.kotlin:KotlinLibrary:2.0.6'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
-
-    implementation group: 'io.ultreia', name: 'bluecove', version: '2.1.1'
-
     implementation 'net.java.dev.jna:jna:5.10.0'
     implementation 'net.java.dev.jna:jna-platform:5.10.0'
+
+    implementation group: 'io.ultreia', name: 'bluecove', version: '2.1.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
+
+    implementation 'org.xxxsarutahikoxxx.kotlin:KotlinLibrary:2.0.7'
 }
 
 test {
@@ -37,7 +37,7 @@ apply plugin: 'maven-publish'
 
 def gID = "org.xxxsarutahikoxxx.kotlin"
 def aID= "HIDDevice"
-def ver = "2.0.1"
+def ver = "2.0.2"
 
 publishing {
     publications {
