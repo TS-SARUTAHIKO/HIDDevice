@@ -1,7 +1,7 @@
-package org.xxxsarutahikoxxx.kotlin.HIDDevice._test
+package org.xxxsarutahikoxxx.kotlin.hiddevice._test
 
-import org.xxxsarutahikoxxx.kotlin.KotlinLibrary.Utilitys.out
-import org.xxxsarutahikoxxx.kotlin.HIDDevice.utilitys.JISHost
+import org.xxxsarutahikoxxx.kotlin.kotlinlibrary.Utilitys.out
+import org.xxxsarutahikoxxx.kotlin.hiddevice.utilitys.JISHost
 
 fun main(args: Array<String>) {
     JISHost {

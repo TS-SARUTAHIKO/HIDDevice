@@ -1,6 +1,6 @@
-package org.xxxsarutahikoxxx.kotlin.HIDDevice.core
+package org.xxxsarutahikoxxx.kotlin.hiddevice.core
 
-import org.xxxsarutahikoxxx.kotlin.HIDDeviceNative.HID
+import org.xxxsarutahikoxxx.kotlin.hiddevicenative.HID
 import java.lang.RuntimeException
 
 

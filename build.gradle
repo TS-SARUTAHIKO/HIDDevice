@@ -24,7 +24,7 @@ dependencies {
     implementation group: 'io.ultreia', name: 'bluecove', version: '2.1.1'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
 
-    implementation 'org.xxxsarutahikoxxx.kotlin:KotlinLibrary:2.0.8'
+    implementation 'org.xxxsarutahikoxxx.kotlin:KotlinLibrary:2.0.10'
 }
 
 test {
@@ -37,7 +37,7 @@ apply plugin: 'maven-publish'
 
 def gID = "org.xxxsarutahikoxxx.kotlin"
 def aID= "HIDDevice"
-def ver = "2.0.3"
+def ver = "2.0.6"
 
 publishing {
     publications {

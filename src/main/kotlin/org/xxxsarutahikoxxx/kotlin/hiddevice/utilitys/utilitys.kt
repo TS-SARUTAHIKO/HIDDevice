@@ -1,7 +1,7 @@
-package org.xxxsarutahikoxxx.kotlin.HIDDevice.utilitys
+package org.xxxsarutahikoxxx.kotlin.hiddevice.utilitys
 
-import org.xxxsarutahikoxxx.kotlin.HIDDevice.core.HIDDeviceJIS
-import org.xxxsarutahikoxxx.kotlin.HIDDevice.core.HIDDeviceUS
+import org.xxxsarutahikoxxx.kotlin.hiddevice.core.HIDDeviceJIS
+import org.xxxsarutahikoxxx.kotlin.hiddevice.core.HIDDeviceUS
 
 
 internal val USHost = HIDDeviceUS(true)

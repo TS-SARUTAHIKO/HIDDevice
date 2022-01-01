@@ -1,8 +1,8 @@
-package org.xxxsarutahikoxxx.kotlin.HIDDevice.runner
+package org.xxxsarutahikoxxx.kotlin.hiddevice.runner
 
-import org.xxxsarutahikoxxx.kotlin.KotlinLibrary.IORunner.*
-import org.xxxsarutahikoxxx.kotlin.KotlinLibrary.Utilitys.out
-import org.xxxsarutahikoxxx.kotlin.HIDDevice.core.*
+import org.xxxsarutahikoxxx.kotlin.kotlinlibrary.IORunner.*
+import org.xxxsarutahikoxxx.kotlin.kotlinlibrary.Utilitys.out
+import org.xxxsarutahikoxxx.kotlin.hiddevice.core.*
 import java.io.Serializable
 import java.lang.RuntimeException
 

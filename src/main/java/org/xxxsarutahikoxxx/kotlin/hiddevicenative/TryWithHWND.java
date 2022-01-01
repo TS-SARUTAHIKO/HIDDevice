@@ -1,4 +1,4 @@
-package org.xxxsarutahikoxxx.kotlin.HIDDeviceNative;
+package org.xxxsarutahikoxxx.kotlin.hiddevicenative;
 
 import com.sun.jna.Native;
 import com.sun.jna.Pointer;
